@@ -1,3 +1,37 @@
 // Place all the styles related to the Emails controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+table,
+td, thead{
+    border: none;
+	height: 60px;
+
+}
+
+table {
+	margin: auto;
+    width: 70%;
+}
+
+th{
+	width: 500px;
+	height: 50px;
+	text-align: center;
+	font-size: 20px; 
+}
+
+thead,
+tfoot {
+
+    background-color: #888C95;
+    color: #fff;
+}
+
+.email-object{
+	
+}
+
+.th-object {
+	width: 100px;
+}

@@ -1,8 +1,8 @@
 <table id="mailer">
   <thead>
     <tr>
-      <th>Object</th>
-      <th>Body</th>
+      <th class= "th-object">Object</th>
+      <th class="th-body">Body</th>
     </tr>
   </thead>
 
@@ -10,9 +10,9 @@
 
   <tbody>
     <tr>
-      <td><%= link_to email.object, "/mail/"+email.id.to_s, id: "email-objet", remote: true %></td>
+      <td class="email-object"><%= link_to email.object, "/mail/"+email.id.to_s, id: "email-objet", remote: true %></td>
       <!-- L'utilisation de .html dans fichier .js.erb oblige de créer une balise <td> car html va créer une balise temporaire qui remplacera cette dernières -->
-      <td id="mailer-content"></td>
+      <td class="email-body" id="mailer-content"></td>
       <td>
         <%= link_to 'Delete', "/mail/"+email.id.to_s, remote: true, method: :delete, data: { confirm: 'Are you sure ?' } %>
       </td>
