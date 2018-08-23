@@ -9,6 +9,8 @@ class EmailsController < ApplicationController
       format.html { redirect_to root_path }
       format.js
     end
+    @emails.read = true
+    @emails.save 
   end
 
   def destroy
