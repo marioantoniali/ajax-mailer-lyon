@@ -16,7 +16,7 @@ class EmailsController < ApplicationController
     @emails.destroy
     respond_to do |format|
       format.html { redirect_to root_path }
-      format.js
-    end 
+      format.js { redirect_to root_path }
+    end
   end
 end
