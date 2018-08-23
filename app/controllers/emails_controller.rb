@@ -10,4 +10,8 @@ class EmailsController < ApplicationController
       format.js
     end
   end
+
+  def destroy
+    @emails = Email.find(params[:id])
+  end
 end

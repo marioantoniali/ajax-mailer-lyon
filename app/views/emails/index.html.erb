@@ -13,6 +13,11 @@
       <td><%= link_to email.object, "/show/"+email.id.to_s, id: "email-objet", remote: true %></td>
       <!-- L'utilisation de .html dans fichier .js.erb oblige de créer une balise <td> car html va créer une balise temporaire qui remplacera cette dernières -->
       <td id="mailer-content"></td>
+      <td>
+        <%= link_to 'Delete', remote: true, method: :delete, data: { confirm: 'Are you sure ?' } do %>
+          <button>Delete!</button>
+        <% end %>
+      </td>
     </tr>
   </tbody>
 
