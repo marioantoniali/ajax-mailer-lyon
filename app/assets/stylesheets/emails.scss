@@ -18,7 +18,7 @@ th{
 	width: 500px;
 	height: 50px;
 	text-align: center;
-	font-size: 20px; 
+	font-size: 20px;
 }
 
 thead,
@@ -28,15 +28,15 @@ tfoot {
     color: #fff;
 }
 
-td.email-object{
+td.email-object-unread {
+  text-decoration: none;
 	font-weight: bold;
-	color: #151F3B;
-	text-decoration: none;
+	color: black;
 }
 
-td.email-object:hover {
-	color: black;
-	text-decoration: none;
+#email-object-read {
+  text-decoration: none;
+  color: black;
 }
 
 .th-object {

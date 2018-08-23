@@ -10,7 +10,11 @@
 
   <tbody>
     <tr>
-      <td class="email-object"><%= link_to email.object, "/mail/"+email.id.to_s, id: "email-objet", remote: true %></td>
+      <% if email.read %>
+        <td class="email-object-read"><%= link_to email.object, "/mail/"+email.id.to_s, id: "email-objet", remote: true %></td>
+      <% elsif !email.read %>
+        <td class="email-object-unread"><%= link_to email.object, "/mail/"+email.id.to_s, id: "email-objet", remote: true %></td>
+      <% end %>
       <!-- L'utilisation de .html dans fichier .js.erb oblige de créer une balise <td> car html va créer une balise temporaire qui remplacera cette dernières -->
       <td class="email-body" id="mailer-content"></td>
       <td>
