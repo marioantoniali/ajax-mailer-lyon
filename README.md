@@ -27,12 +27,14 @@ $ rails db:migrate
 
 $ rails db:seed
 
-$ rails server
 ```
-Et dans votre navigateur de preferance
+Et dans votre navigateur de préférence
 
 ```sh
 localhost:3000
+
+Ne pas oublier $ rails server
+
 ```
 
 ### La structure de l'appli
@@ -50,7 +52,7 @@ localhost:3000
 │   │       ├── application.scss
 │   │       └── emails.scss
 │   ├── channels
-│   │   
+│   │  
 │   ├── controllers
 │   │   ├── application_controller.rb
 │   │   ├── concerns
@@ -58,7 +60,7 @@ localhost:3000
 │   ├── helpers
 │   │
 │   ├── jobs
-│   │   
+│   │  
 │   ├── mailers
 │   │   └── application_mailer.rb
 │   ├── models
@@ -76,9 +78,9 @@ localhost:3000
 │           ├── mailer.html.erb
 │           └── mailer.text.erb
 ├── bin
-│   
+│  
 ├── config
-│   
+│  
 ├── config.ru
 ├── db
 │   ├── development.sqlite3
@@ -96,7 +98,7 @@ localhost:3000
 │   └── development.log
 ├── package.json
 ├── public
-│   
+│  
 ├── Rakefile
 ├── README.md
 ├── storage
