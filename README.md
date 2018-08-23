@@ -107,7 +107,7 @@ localhost:3000
 
 
 
-Pour accéder à la page Heroku, [UI_Sprint_Lyon](https://ajax-mailer-lyon.herokuapp.com/)
+Pour accéder à la page Heroku, [Mailer](https://ajax-mailer-lyon.herokuapp.com/)
 
 
 ### @uteurs, l'équipe de Lyon
