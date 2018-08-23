@@ -1,4 +1,4 @@
-<table>
+<table id="mailer">
   <thead>
     <tr>
       <th>Object</th>
@@ -10,8 +10,8 @@
 
   <tbody>
     <tr>
-      <td><%= email.object %></td>
-      <td><%= email.body %></td>
+      <td><%= link_to email.object, "/show/"+email.id.to_s, remote: true %></td>
+      <td id="mailer-content"></td>
     </tr>
   </tbody>
 

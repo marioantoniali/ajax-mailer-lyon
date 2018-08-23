@@ -1,0 +1,8 @@
+$(document).ready(function() {
+
+let body_email = $("<%= j (render 'layouts/body', email: @email) %>");
+
+// append va remplir le selecteur à la fin de ce dernier mais on va donc cumuler à chaque clic. html permet de créer un objet temporaire qui sera remplacé à chaque clic
+$('#mailer-content').html(body_email);
+
+});
